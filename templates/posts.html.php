@@ -14,13 +14,13 @@
     ?>
         <tr>
             <td><?= $post['id'] ?></td>
-            <td><?= $post['post_name'] ?></td>
+            <td><?= $post['post_title'] ?></td>
             <td><?= $post['post_content'] ?></td>
             <td>
                 <img src="images/<?= $post['post_image'] ?>"width="100" height="100">
             </td>
             <td><?= $post['post_date'] ?></td>
-            <td><?= $post['name'] ?></td>
+            <td><?= $post['username'] ?></td>
             <td><?= $post['module_name'] ?></td>
             <td>
                 <form action="editpost.php" method="post">

@@ -3,7 +3,7 @@
 try{
     include '../includes/DatabaseConnection.php';
 
-    $sql = 'SELECT posts.id, post_name, post_content, post_image, post_date, `username`, `module_name` FROM posts
+    $sql = 'SELECT posts.id, post_title, post_content, post_image, post_date, `username`, `module_name` FROM posts
     INNER JOIN users
     ON user_id = users.id
     INNER JOIN modules
@@ -16,7 +16,7 @@ try{
     $title = 'All Posts';
 
     ob_start();
-    include 'templates/posts.html.php';
+    include 'posts.html.php';
     $output = ob_get_clean();
 }catch (PDOException $e){
     $title = 'An error has occured';

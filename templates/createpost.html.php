@@ -16,22 +16,16 @@
     <br>
     <label for="">Username</label>
     <select name="user_id" id="">
-        <?php
-        foreach ($users as $user) {
-        ?>
-            <option value=""><?= $user['username'] ?></option>
+        <?php foreach ($users as $user) { ?>
+            <option value="<?= $user['id'] ?>"><?= $user['username'] ?></option>
         <?php } ?>
     </select>
-    <br>
-    <label for="">Module</label>
+
     <select name="module_id" id="">
-        <?php
-        foreach ($modules as $module) { 
-        ?>
-            <option value=""><?= $module['module_name'] ?></option>
+        <?php foreach ($modules as $module) { ?>
+            <option value="<?= $module['id'] ?>"><?= $module['module_name'] ?></option>
         <?php } ?>
     </select>
+
     <input type="submit" value="Create" name="create">
 </form>
-
-

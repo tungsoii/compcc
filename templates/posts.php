@@ -3,7 +3,7 @@
 try{
     include '../includes/DatabaseConnection.php';
 
-    $sql = 'SELECT posts.id, post_title, post_content, post_image, post_date, `user_id`, `module_id` FROM posts
+    $sql = 'SELECT posts.id, post_title, post_content, post_image, post_date, `username`, `module_name` FROM posts
     INNER JOIN users
     ON user_id = users.id
     INNER JOIN modules

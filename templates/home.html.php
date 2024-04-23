@@ -1,15 +1,16 @@
 <section class="hero-section">
     <div class="hero">
-        <h2>Tung's Page</h2>
+        <h2>Greenwich University Student Forum</h2>
         <p>
-        Welcome to my Page.
+        Where Innovation Starts. Students can freely upload their questions that they have in mind and anyone with 
+        the right specialty and skills will be able to answer to them.
         </p>
         <div class="buttons">
-        <a href="createpost.php" class="join">Ask Now</a>
+        <a href="createpost.php" class="join">Upload a Question Now!</a>
         <a href="posts.php" class="learn">View More</a>
         </div>
     </div>
     <div class="img">
-        <img src="images/icon.png" alt="hero image" />
+        <img src="../uploads/TungCon.png" alt="TungSoi" />
     </div>
 </section>

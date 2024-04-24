@@ -21,8 +21,8 @@
                 
                 <ul class="links">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="posts.php">All Posts</a></li>
-                    <li><a href="createpost.php">Create Post</a></li>
+                    <li><a href="questions.php">All Posts</a></li>
+                    <li><a href="createquestion.php">Create Post</a></li>
                     <li><a href="modules.php">Module</a></li>
                     <li><a href="../mail/contact.php">Contact Us</a></li>
                 </ul>

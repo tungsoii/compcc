@@ -2,13 +2,13 @@
 if (!isset($_POST['create'])) {
     try {
         include "../includes/DatabaseConnection.php";
-        $user_sql = 'SELECT * FROM users';
+        $acc_sql = 'SELECT * FROM users';
         $module_sql ='SELECT * FROM modules';
-        $users = $pdo->query($user_sql)->fetchAll();
+        $accs = $pdo->query($acc_sql)->fetchAll();
         $modules = $pdo->query($module_sql)->fetchAll();
         $title = 'Create Post';
         ob_start();
-        include 'createpost.html.php';
+        include 'createquestion.html.php';
         $output = ob_get_clean();
     } catch (PDOException $e) {
         $title = 'An error has occurred';
@@ -18,19 +18,19 @@ if (!isset($_POST['create'])) {
 } else { 
     try {
         include '../includes/DatabaseConnection.php';
-        $sql = "INSERT INTO posts (post_title, post_content, post_image, post_date, user_id, module_id) VALUES (:post_title, :post_content, :post_image, :post_date, :user_id, :module_id)";
+        $sql = "INSERT INTO questions (question_name, question_data, question_img, question_time, user_id, module_id) VALUES (:question_name, :question_data, :question_img, :question_time, :user_id, :module_id)";
 
         $stm = $pdo->prepare($sql);
-        $stm->bindValue(":post_title", $_POST['post_title']);
-        $stm->bindValue(":post_content", $_POST['post_content']);
-        $stm->bindValue(":post_image", $_POST['post_image']);
-        $stm->bindValue(":post_date", $_POST['post_date']);
+        $stm->bindValue(":question_name", $_POST['question_name']);
+        $stm->bindValue(":question_data", $_POST['question_data']);
+        $stm->bindValue(":question_img", $_POST['question_img']);
+        $stm->bindValue(":question_time", $_POST['question_time']);
         $stm->bindValue(":user_id", $_POST['user_id']);
         $stm->bindValue(":module_id", $_POST['module_id']);
 
         $stm->execute();
 
-        header('Location: posts.php');
+        header('Location: questions.php');
 
     } catch (PDOException $e) {
         $title = 'An error has occurred';

@@ -188,7 +188,7 @@ body {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        background: linear-gradient(to bottom left, #bc75f9 50%, #e784c4 85%);
+        background: linear-gradient(to bottom left, #1916da 50%, #210588 85%);
         flex-direction: column;
         transition: 0.3s ease;
     }
@@ -221,7 +221,7 @@ body {
 
 footer {
     padding: 1em;
-    color: #e784c4;
+    color: #5308a9;
     background-color: #fff;
     ;
 }
@@ -260,7 +260,7 @@ table {
     height: 200px;
     background-color: #fff;
     margin-top: 50px;
-    color: #521f7f;
+    color: #0b0d72;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -269,7 +269,7 @@ table {
 
 .module-banner {
     height: 50%;
-    background-image: url(images/971.jpg);
+    background-image: url(uploads/TungCon.jpg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -282,17 +282,23 @@ table {
 }
 
 .container-body {
-    background-color: #6dbbab;
+    background-color: #3c159e;
 }
 
 .container {
+    justify-content: center;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    background-color: #fff;
-    /* Form background color */
+    background-color: #656283;
     padding: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
 }

@@ -232,7 +232,7 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <h2 class="logo"><a href="index.php">Page of Tung</a></h2>
+            <h2 class="logo"><a href="index.php">University of Greenwich</a></h2>
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" id="hamburger-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -241,15 +241,15 @@
             </label>
 
             <ul class="links">
-                <li><a href="../templates/index.php">Home               </a></li>
-                <li><a href="../templates/posts.php">All Posts          </a></li>
-                <li><a href="../templates/createpost.php">Create Post   </a></li>
-                <li><a href="../templates/modules.php">Module           </a></li>
-                <li><a href="../mail/contact.php">Contact Us            </a></li>
+                <li><a href="../templates/index.php">           Home               </a></li>
+                <li><a href="../templates/posts.php">           All Posts          </a></li>
+                <li><a href="../templates/createpost.php">      Create Post        </a></li>
+                <li><a href="../templates/modules.php">         Module             </a></li>
+                <li><a href="../mail/contact.php">              Contact Us         </a></li>
             </ul>
             <div class="buttons">
-                <a href="#" class="login">Login</a>
-                <a href="#" class="register">Register</a>
+                <a href="#" class="login">         Login    </a>
+                <a href="#" class="register">   Register    </a>
             </div>
         </nav>
     </header>
